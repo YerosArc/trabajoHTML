@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta etiquetas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Solicita tu presupuesto en Tempus Relojer&iacute;a. Rellena el formulario y te enviaremos informaci&oacute;n sobre el reloj que buscas sin compromiso.">
+    <meta name="keywords" content="presupuesto relojes, comprar reloj, informaci&oacute;n relojes, Tempus Relojer&iacute;a">
+    <meta name="author" content="Tempus Relojer&iacute;a">
+    <meta name="robots" content="index, follow">
+    <title>Presupuesto | Solicita informaci&oacute;n a Tempus Relojer&iacute;a</title>
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <!-- Cabecera con logotipo y menu de navegacion -->
+    <header class="cabecera">
+        <nav class="menu">
+            <a href="../index.html" title="Inicio de Tempus Relojer&iacute;a">
+                <img src="../images/logo.png" alt="Logotipo de Tempus Relojer&iacute;a" title="Tempus Relojer&iacute;a" width="240" height="60">
+            </a>
+            <ul>
+                <li><a href="../index.html" title="P&aacute;gina de inicio">Inicio</a></li>
+                <li><a href="productos.html" title="Cat&aacute;logo de relojes">Productos</a></li>
+                <li><a href="presupuesto.html" class="activo" title="Solicitar presupuesto">Presupuesto</a></li>
+                <li><a href="contacto.html" title="Datos de contacto y ubicaci&oacute;n">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulario de presupuesto -->
+    <section class="general">
+        <h1 class="titulo-seccion">Solicita tu presupuesto</h1>
+        <p class="intro-seccion">Rellena todos los campos y te responderemos en menos de 24 horas.</p>
+
+        <form name="presupuesto" id="presupuesto" class="formulario" method="post" action="presupuesto.html">
+            <!-- Nombre: obligatorio -->
+            <p>
+                <span class="obligatorio">Nombre *</span>
+                <input type="text" name="nombre" id="nombre" class="campo" placeholder="Tu nombre y apellidos" maxlength="60" required autofocus>
+            </p>
+            <!-- Email: comprueba que tenga formato de correo -->
+            <p>
+                <span class="obligatorio">Email *</span>
+                <input type="email" name="email" id="email" class="campo" placeholder="nombre@correo.com" maxlength="80" required>
+            </p>
+            <!-- Telefono: 9 cifras -->
+            <p>
+                <span class="obligatorio">Tel&eacute;fono *</span>
+                <input type="tel" name="telefono" id="telefono" class="campo" placeholder="9 n&uacute;meros, por ejemplo 600123456" pattern="[0-9]{9}" required>
+            </p>
+            <!-- Texto multilinea -->
+            <p>
+                <span class="obligatorio">Solicite m&aacute;s informaci&oacute;n *</span>
+                <textarea name="informacion" id="informacion" class="campo" rows="6" cols="40" placeholder="Cu&eacute;ntanos qu&eacute; reloj buscas" required></textarea>
+            </p>
+            <!-- Aceptacion de la politica de privacidad -->
+            <p>
+                <input type="checkbox" name="privacidad" id="privacidad" value="acepto" required>
+                He le&iacute;do y acepto la Pol&iacute;tica de privacidad
+            </p>
+            <p>
+                <input type="submit" name="enviar" value="Enviar" class="boton">
+            </p>
+        </form>
+    </section>
+
+    <!-- Pie de pagina -->
+    <footer class="pie">
+        <div class="pie-contenido">
+            <div class="pie-bloque">
+                <h2>S&iacute;guenos</h2>
+                <ul class="redes">
+                    <li><a href="https://www.facebook.com/" target="_blank" title="Facebook de Tempus Relojer&iacute;a"><img src="../images/redes/facebook.png" alt="Facebook" title="Facebook" width="48" height="48"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" title="Instagram de Tempus Relojer&iacute;a"><img src="../images/redes/instagram.png" alt="Instagram" title="Instagram" width="48" height="48"></a></li>
+                    <li><a href="https://x.com/" target="_blank" title="X de Tempus Relojer&iacute;a"><img src="../images/redes/x.png" alt="X" title="X" width="48" height="48"></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank" title="YouTube de Tempus Relojer&iacute;a"><img src="../images/redes/youtube.png" alt="YouTube" title="YouTube" width="48" height="48"></a></li>
+                </ul>
+            </div>
+            <div class="pie-bloque">
+                <h2>Direcci&oacute;n</h2>
+                <p>Calle del Reloj, 12<br>50001 Zaragoza (Espa&ntilde;a)<br>Tel. 976 123 456</p>
+            </div>
+            <div class="pie-bloque">
+                <h2>Aviso legal</h2>
+                <p>Tempus Relojer&iacute;a S.L. es la titular de este sitio web. Queda prohibida la reproducci&oacute;n total o parcial de sus contenidos sin autorizaci&oacute;n expresa.</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Tempus Relojer&iacute;a S.L. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
